@@ -1,0 +1,201 @@
+.cabecera {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cabecera h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.cabecera h1 .acento {
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---------- Catálogo ---------- */
+
+.catalogo h2 {
+  font-size: 1.5rem;
+}
+
+.filtros {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filtros label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.filtros select,
+.tarjeta-tenis select {
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.grilla-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.tarjeta-tenis {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.tarjeta-tenis:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+}
+
+.tarjeta-tenis img {
+  max-width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #222;
+  margin-bottom: 0.75rem;
+}
+
+.tarjeta-tenis h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.tarjeta-tenis .marca {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin: 0.1rem 0;
+}
+
+.tarjeta-tenis .calificacion {
+  font-size: 0.85rem;
+  margin: 0.1rem 0;
+}
+
+.tarjeta-tenis .precio {
+  color: var(--color-accent);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+}
+
+.tarjeta-tenis label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.6rem;
+}
+
+button {
+  background-color: var(--color-accent);
+  color: #0b0b0b;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* ---------- Carrito ---------- */
+
+.carrito-contenedor h2 {
+  font-size: 1.5rem;
+}
+
+.carrito-vacio {
+  color: var(--color-text-muted);
+  padding: 2rem;
+  text-align: center;
+  border: 1px dashed var(--color-border);
+  border-radius: 10px;
+}
+
+.tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-carrito th {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: left;
+  padding: 0.6rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tabla-carrito td {
+  padding: 0.6rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.celda-producto {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.miniatura {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: #222;
+}
+
+.input-cantidad {
+  width: 55px;
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 0.3rem;
+}
+
+.carrito-resumen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--color-accent);
+}
