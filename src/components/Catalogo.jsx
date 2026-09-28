@@ -49,7 +49,7 @@ function Catalogo() {
   };
 
   return (
-    <section className="catalogo">
+    <section className="catalogo" id="catalogo">
       <h2>Catálogo de tenis</h2>
 
       {/* Componente FiltrosLaterales */}
